@@ -14,7 +14,7 @@
 
     <script type="text/babel">
 
-        var CONTACTS = [
+        var Kontacts = [
             {
                 id: 1,
                 name: 'Hoolio',
@@ -55,13 +55,13 @@
         var ContactsList = React.createClass({
             getInitialState: function() {
                 return {
-                    displayedContacts: CONTACTS
+                    displayedContacts: Kontacts
                 };
             },
 
             handleSearch: function(event) {
                 var searchQuery = event.target.value.toLowerCase();
-                var displayedContacts = CONTACTS.filter(function(el) {
+                var displayedContacts = Kontacts.filter(function(el) {
                     var searchValue = el.name.toLowerCase();
                     return searchValue.indexOf(searchQuery) !== -1;
                 })  ;
